@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./arrowFunction.js" defer></script>
+</head>
+<body>
+    <h2>하이</h2>
+
+
+<script>
+    function main(x) {
+        console.log('준비...');
+        x();
+        console.log('정리...');
+    }
+    
+    function sayHi () {
+        console.log('아뇽');
+    }
+
+    main(sayHi);
+
+    function greeToUser(greet) {
+        const name = '지애짱';
+        // 데이터로딩...
+        greet(name);
+    }
+
+    function greetInKorean(name) {
+        console.log(name + '님 할롱');
+    }
+
+    greeToUser(greetInKorean); // 지애짱님 할룽
+
+    function greetInEnglist(name) {
+        console.log('Hi,' + name);
+    }
+
+    greeToUser(greetInEnglist);
+
+    setTimeout(function() {
+        console.log('hi');
+    }, 1000);
+
+</script>
+</body>
+</html>
