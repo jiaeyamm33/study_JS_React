@@ -123,7 +123,7 @@ console.log(mixed.size);
 
 // 함수의 arguments 프로퍼티 = 매개변수가 아니며 모든 전달인자를 배열 형식으로 받아두는 프로퍼티이다.
 
-function print(a,b,…c){
+function print(a,b,...c){
     for(let i = 0 ; i < arguments.length ; i++){
       console.log(arguments[i]);
     }

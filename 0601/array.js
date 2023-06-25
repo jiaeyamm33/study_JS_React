@@ -52,7 +52,7 @@ console.log(fruit);
 
 fruit.push('peach');
 
-console.clear();
+
 console.log(fruit);
 
 fruit.splice(1, 1, 'hi', 'hi2');
@@ -66,7 +66,7 @@ console.log(newFruit);
 
 // 5. searching (indexOf, includes, lastIndexOf)
 
-console.clear();
+
 console.log(fruit);
 
 console.log(fruit.indexOf('banana')); // 없으면 -1 출력
